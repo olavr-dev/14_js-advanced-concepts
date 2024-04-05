@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// Set default function parameter
+//? Set default function parameter
 // -----------------------------------------------------------------------------
 
 function greetUser(greetingPrefix, userName = 'User') {
@@ -10,7 +10,7 @@ greetUser('Hi', 'Olav'); // Returns Hi Olav!
 greetUser('Greetings'); // Returns Greetings User!
 
 // -----------------------------------------------------------------------------
-// Working with rest parameters (...parameter) and spread operator (...variable)
+//? Working with rest parameters (...parameter) & spread operator (...variable)
 // -----------------------------------------------------------------------------
 
 // This function can take any number of parameters
@@ -34,13 +34,13 @@ console.log(sumUp(inputNumbers)); // Returns 01,5,10,11,20,31
 console.log(sumUp(...inputNumbers)); // Returns 78
 
 // -----------------------------------------------------------------------------
-// Functions are objects
+//? Functions are objects
 // -----------------------------------------------------------------------------
 
 console.log(sumUp); // Returns [Function: sumUp]
 
 // -----------------------------------------------------------------------------
-// Working with template literals ``
+//? Working with template literals ``
 // -----------------------------------------------------------------------------
 
 function greetUser(greetingPrefix, userName = 'User') {

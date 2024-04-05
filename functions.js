@@ -6,9 +6,8 @@ function greetUser(greetingPrefix, userName = 'User') {
   console.log(greetingPrefix + ' ' + userName + '!');
 }
 
-// This returns "Hi Olav!"
-greetUser('Hi', 'Olav');
-greetUser('Greetings');
+greetUser('Hi', 'Olav'); // Returns Hi Olav!
+greetUser('Greetings'); // Returns Greetings User!
 
 // -----------------------------------------------------------------------------
 // Working with rest parameters (...parameter) and spread operator (...variable)
@@ -39,3 +38,15 @@ console.log(sumUp(...inputNumbers)); // Returns 78
 // -----------------------------------------------------------------------------
 
 console.log(sumUp); // Returns [Function: sumUp]
+
+// -----------------------------------------------------------------------------
+// Working with template literals ``
+// -----------------------------------------------------------------------------
+
+function greetUser(greetingPrefix, userName = 'User') {
+  // console.log(greetingPrefix + ' ' + userName + '!');
+  console.log(`${greetingPrefix} ${userName}!`); // Template literals
+}
+
+greetUser('Hi', 'Olav'); // Returns Hi Olav!
+greetUser('Greetings'); // Returns Greetings User!

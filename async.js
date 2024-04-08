@@ -12,7 +12,14 @@ async function readFile() {
 
   // This is a promise chain
   // The await keyword is used in front of any method that returns a promise
-  fileData = await fs.readFile('data.txt');
+  try {
+    fileData = await fs.readFile('data.txt');
+  } catch {
+    error;
+  }
+  {
+    console.log(error);
+  }
   console.log('File parsing done!');
   console.log(fileData.toString());
 

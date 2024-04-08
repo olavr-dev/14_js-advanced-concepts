@@ -16,6 +16,7 @@ function readFile() {
 
   // Since we call now call fs/promises it does no longer require a
   // callback function
+
   // This is a promise chain
   fs.readFile('data.txt')
     .then(function (fileData) {
@@ -23,7 +24,11 @@ function readFile() {
       console.log(fileData.toString());
     })
     // return anotherAsyncOperation
-    .then(function () {});
+    .then(function () {})
+    // error handling
+    .catch(function (error) {
+      console.log(error);
+    });
 
   // Synchronous task. This will display first, while readFile is loading.
   console.log('Hello World!');
